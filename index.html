@@ -2479,5 +2479,109 @@
       src="http://mystik.themerex.net/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.3.1"
       id="elementor-frontend-js"
     ></script>
+    <script type="text/javascript" id="rs-initialisation-scripts">
+      var tpj = jQuery;
+
+      var revapi4;
+
+      if (window.RS_MODULES === undefined) window.RS_MODULES = {};
+      if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+      RS_MODULES.modules["revslider41"] = {
+        init: function () {
+          window.revapi4 =
+            window.revapi4 === undefined ||
+            window.revapi4 === null ||
+            window.revapi4.length === 0
+              ? document.getElementById("rev_slider_4_1")
+              : window.revapi4;
+          if (
+            window.revapi4 === null ||
+            window.revapi4 === undefined ||
+            window.revapi4.length == 0
+          ) {
+            window.revapi4initTry =
+              window.revapi4initTry === undefined
+                ? 0
+                : window.revapi4initTry + 1;
+            if (window.revapi4initTry < 20)
+              requestAnimationFrame(function () {
+                RS_MODULES.modules["revslider41"].init();
+              });
+            return;
+          }
+          window.revapi4 = jQuery(window.revapi4);
+          if (window.revapi4.revolution == undefined) {
+            revslider_showDoubleJqueryError("rev_slider_4_1");
+            return;
+          }
+          revapi4.revolutionInit({
+            revapi: "revapi4",
+            DPR: "dpr",
+            sliderLayout: "fullscreen",
+            duration: 15000,
+            visibilityLevels: "1240,1024,768,480",
+            gridwidth: "1260,1024,778,480",
+            gridheight: "995,895,778,720",
+            minHeight: 500,
+            lazyType: "smart",
+            perspective: 600,
+            perspectiveType: "local",
+            editorheight: "995,895,778,720",
+            responsiveLevels: "1240,1024,768,480",
+            progressBar: { disableProgressBar: true },
+            navigation: {
+              keyboardNavigation: true,
+              mouseScrollNavigation: false,
+              wheelCallDelay: 1000,
+              onHoverStop: false,
+              touch: {
+                touchenabled: true,
+                swipe_min_touches: 50,
+              },
+              arrows: {
+                enable: true,
+                style: "mystik",
+                hide_onmobile: true,
+                hide_under: 1023,
+                left: {
+                  h_offset: 50,
+                  v_offset: -85,
+                },
+                right: {
+                  h_offset: 50,
+                  v_offset: -85,
+                },
+              },
+              bullets: {
+                enable: false,
+                tmp: "",
+                style: "hesperiden",
+                hide_over: 1023,
+                v_offset: 100,
+              },
+            },
+            parallax: {
+              levels: [
+                5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 47, 48, 49, 50, 51, 55,
+              ],
+              type: "scroll",
+            },
+            viewPort: {
+              global: true,
+              globalDist: "-200px",
+              enable: false,
+              visible_area: "20%",
+            },
+            fallbacks: {
+              allowHTML5AutoPlayOnAndroid: true,
+            },
+          });
+        },
+      }; // End of RevInitScript
+
+      if (window.RS_MODULES.checkMinimal !== undefined) {
+        window.RS_MODULES.checkMinimal();
+      }
+    </script>
   </body>
 </html>
