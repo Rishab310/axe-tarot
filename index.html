@@ -526,6 +526,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      a:hover {
+          text-decoration: none;
+      }
+    </style>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
 
   <body
@@ -1169,7 +1178,7 @@
                                     </div> -->
                                     <div class="  elementor-element  elementor-element-39a82df  sc_fly_static  elementor-widget  elementor-widget-trx_sc_button"  data-id="39a82df"  data-element_type="widget"  data-widget_type="trx_sc_button.default">
                                       <div class="elementor-widget-container" style="margin-bottom: 40px; margin-top: 40px;">
-                                        <div  id="trx_sc_button_1938330120"  class="sc_item_button sc_button_wrap">
+                                        <!-- <div  id="trx_sc_button_1938330120"  class="sc_item_button sc_button_wrap">
                                           <a href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment." class="   sc_button   sc_button_bordered   sc_button_size_normal   sc_button_icon_left   color_style_dark ">
                                             <span class="sc_button_text">
                                               <span class="sc_button_title">
@@ -1177,7 +1186,17 @@
                                               </span>
                                             </span>
                                           </a>
-                                        </div>
+                                        </div> -->
+                                        <div>
+                                          <button class="sc_button sc_button_bordered sc_button_size_small color_style_dark px-3" style="outline: none !important;"
+                                          type="button" id="drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Schedule your session
+                                          </button>
+                                          <div class="dropdown-menu py-0" aria-labelledby="drop1">
+                                            <a class="sc_button color_style_dark dropdown-item mx-0" href="mailto:Juuhibhardwaj3@gmail.com">Email</a>
+                                            <a class="sc_button color_style_dark dropdown-item mx-0" target="blank" href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment.">WhatsApp</a>
+                                          </div>
+                                      </div>
                                       </div>
                                     </div>
                                     <!-- <div class="   elementor-element   elementor-element-b955986   sc_fly_static   elementor-widget elementor-widget-spacer " data-id="b955986" data-element_type="widget" data-widget_type="spacer.default">
@@ -1235,19 +1254,32 @@
                                                 <div class="icons"><a href="#"  aria-hidden="true" class="icon-plus-symbol"></a></div>
                                                   </div>
                                                   <div class="sc_blogger_item_content entry-content">
-                                                <h5 class="sc_blogger_item_title entry-title" data-item-number="1"><a href="#" rel="bookmark">Tarot consultation </a>
-                                                </h5>		
-                                                <div class="post_meta sc_blogger_item_meta post_meta"></div>
-                                                <div class="sc_blogger_item_excerpt">
-                                                  <ul style="list-style-type:none;">
-                                                    <li>30 mins- ₹1500</li>
-                                                    <li>45 mins- ₹2100</li>
-                                                    <li>1hr - ₹2300</li>
-                                                  </ul>
-                                                </div>
-                                                <div class="sc_blogger_item_button sc_item_button">
-                                                  <a href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment." class="sc_button sc_button_bordered sc_button_size_small color_style_dark">Schedule Now</a>
-                                                </div>
+                                                    <h5 class="sc_blogger_item_title entry-title" data-item-number="1"><a href="#" rel="bookmark">Tarot consultation </a>
+                                                    </h5>		
+                                                    <div class="post_meta sc_blogger_item_meta post_meta"></div>
+                                                    <div class="sc_blogger_item_excerpt">
+                                                      <ul style="list-style-type:none;">
+                                                        <li>30 mins- ₹1500</li>
+                                                        <li>45 mins- ₹2100</li>
+                                                        <li>1hr - ₹2300</li>
+                                                      </ul>
+                                                    </div>
+                                                    <!-- <div class="sc_blogger_item_button sc_item_button">
+                                                      <a href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment." 
+                                                      class="sc_button sc_button_bordered sc_button_size_small color_style_dark">
+                                                        Schedule Now
+                                                      </a>
+                                                    </div> -->
+                                                    <div>
+                                                        <button class="dropdown-toggle sc_button sc_button_bordered sc_button_size_small color_style_dark px-3" style="outline: none !important;"
+                                                        type="button" id="drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Schedule Now
+                                                        </button>
+                                                        <div class="dropdown-menu py-0" aria-labelledby="drop1">
+                                                          <a class="sc_button color_style_dark dropdown-item mx-0" href="mailto:Juuhibhardwaj3@gmail.com">Email</a>
+                                                          <a class="sc_button color_style_dark dropdown-item mx-0" target="blank" href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment.">WhatsApp</a>
+                                                        </div>
+                                                    </div>
                                                   </div><!-- .entry-content -->
                                                 </div><!-- .sc_blogger_item_body -->
                                               </div><!-- .sc_blogger_item -->
@@ -1272,8 +1304,22 @@
                                                           <br>
                                                         </ul>
                                                       </div>
-                                                      <div class="sc_blogger_item_button sc_item_button"><a href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment." class="sc_button sc_button_bordered sc_button_size_small color_style_dark">Schedule Now</a>
+                                                      <div>
+                                                        <button class="dropdown-toggle sc_button sc_button_bordered sc_button_size_small color_style_dark px-3" style="outline: none !important;"
+                                                        type="button" id="drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Schedule Now
+                                                        </button>
+                                                        <div class="dropdown-menu py-0" aria-labelledby="drop1">
+                                                          <a class="sc_button color_style_dark dropdown-item mx-0" href="mailto:Juuhibhardwaj3@gmail.com">Email</a>
+                                                          <a class="sc_button color_style_dark dropdown-item mx-0" target="blank" href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment.">WhatsApp</a>
+                                                        </div>
                                                       </div>
+                                                      <!-- <div class="sc_blogger_item_button sc_item_button">
+                                                        <a href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment." 
+                                                        class="sc_button sc_button_bordered sc_button_size_small color_style_dark">
+                                                          Schedule Now
+                                                        </a>
+                                                      </div> -->
                                                     </div><!-- .entry-content -->
                                                   </div><!-- .sc_blogger_item_body -->
                                                 </div><!-- .sc_blogger_item -->
@@ -1300,7 +1346,17 @@
                                                       <br>
                                                     </ul>
                                                   </div>
-                                                  <div class="sc_blogger_item_button sc_item_button"><a href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment." class="sc_button sc_button_bordered sc_button_size_small color_style_dark">Schedule Now</a>
+                                                  <!-- <div class="sc_blogger_item_button sc_item_button"><a href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment." class="sc_button sc_button_bordered sc_button_size_small color_style_dark">Schedule Now</a> -->
+                                                    <div>
+                                                      <button class="dropdown-toggle sc_button sc_button_bordered sc_button_size_small color_style_dark px-3" style="outline: none !important;"
+                                                      type="button" id="drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Schedule Now
+                                                      </button>
+                                                      <div class="dropdown-menu py-0" aria-labelledby="drop1">
+                                                        <a class="sc_button color_style_dark dropdown-item mx-0" href="mailto:Juuhibhardwaj3@gmail.com">Email</a>
+                                                        <a class="sc_button color_style_dark dropdown-item mx-0" target="blank" href="https://wa.me//919619448988?text=Hey!!%20I%20want%20to%20schedule%20an%20appointment.">WhatsApp</a>
+                                                      </div>
+                                                  </div>
                                                   </div>
                                                 </div><!-- .entry-content -->
                                               </div><!-- .sc_blogger_item_body -->
@@ -1557,7 +1613,7 @@
                     <div class="" style="width: 100% !important; margin: 0 !important; padding: 0 !important;">
                       <div  class="    elementor-text-editor    elementor-clearfix  ">
                         <div style="text-align: center; margin-bottom: 10px; align-items: center;">
-                          <span style="font-size: 20px;">Follows us :</span>
+                          <span style="font-size: 18px;">Follows us :</span>
                           <span>
                             <a target="_blank" href="https://instagram.com/vibewithjuuhi?utm_medium=copy_link" style="padding: 4px;"> 
                               <i class="fa fa-instagram fa-1x"></i> 
@@ -1575,7 +1631,7 @@
                           }
                         </style>
                         <div style="text-align: center; margin-bottom: 10px; align-items: center;">
-                          <span style="font-size: 20px;">Contact us :</span>
+                          <span style="font-size: 18px;">Contact us :</span>
                           <span>
                             <span class="contact-link">|| Mobile No. : +91 9619448988 ||</span>
                             <span class="contact-link">Email : juuhibhardwaj3@gmail.com ||</span>
