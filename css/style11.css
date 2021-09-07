@@ -402,7 +402,7 @@ rs-cbg-mask-wrap {	display:block; visibility: hidden}
 rs-layer-wrap,
 rs-parallax-wrap,
 rs-loop-wrap,
-rs-mask-wrap { display: block; }
+rs-mask-wrap { display: block; margin-top: 50px;}
 
 
 rs-column-wrap>rs-loop-wrap { z-index: 1 }
